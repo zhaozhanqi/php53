@@ -3,7 +3,7 @@
 # build hook has been run but before the application has been started back
 # up again.  This script gets executed directly, so it could be python, php,
 # ruby, etc.
-cp -v $OPENSHIFT_REPO_DIR/.openshift/mongodb_db.js $OPENSHIFT_GEAR_DIR/node_modules/ueberDB/
+cp -v $OPENSHIFT_REPO_DIR/.openshift/mongodb_db.js $OPENSHIFT_REPO_DIR/node_modules/ueberDB/
 
 settingsfile=$OPENSHIFT_REPO_DIR/settings.json
 
