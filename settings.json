@@ -1,13 +1,13 @@
 {
-  "ip": "OPENSHIFT_INTERNAL_IP",
-  "port" : "OPENSHIFT_INTERNAL_PORT",
+  "ip": "OPENSHIFT_NODEJS_IP",
+  "port" : "OPENSHIFT_NODEJS_PORT",
 
   "dbType" : "mongodb",
   "dbSettings" : {
-                   "user"    : "OPENSHIFT_NOSQL_DB_USERNAME",
-                   "host"    : "OPENSHIFT_NOSQL_DB_HOST", 
-                   "port"    : OPENSHIFT_NOSQL_DB_PORT,
-                   "password": "OPENSHIFT_NOSQL_DB_PASSWORD",
+                   "user"    : "OPENSHIFT_MONGODB_DB_USERNAME",
+                   "host"    : "OPENSHIFT_MONGODB_DB_HOST",
+                   "port"    : OPENSHIFT_MONGODB_DB_PORT,
+                   "password": "OPENSHIFT_MONGODB_DB_PASSWORD",
                    "dbname": "OPENSHIFT_APP_NAME"
                  },
   
