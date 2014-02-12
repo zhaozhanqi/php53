@@ -21,7 +21,7 @@ you want)
 
 Add MongoDB support to your application
 
-    rhc cartridge add -a etherpad -c mongodb-2.4
+    rhc cartridge add -a etherpad -c mongodb-2
 
 Add this upstream Etherpad repo
 
