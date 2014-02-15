@@ -14,14 +14,10 @@ Running on OpenShift
 
 Create an account at http://openshift.redhat.com/
 
-Create a nodejs-0.6 application (you can call your application whatever
+Create a nodejs application with mongodb (you can call your application whatever
 you want)
 
-    rhc app create -a etherpad -t nodejs-0.6
-
-Add MongoDB support to your application
-
-    rhc cartridge add -a etherpad -c mongodb-2
+    rhc app create etherpad nodejs-0.6 mongodb-2
 
 Add this upstream Etherpad repo
 
