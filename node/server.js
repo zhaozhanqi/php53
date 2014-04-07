@@ -77,7 +77,7 @@ async.waterfall([
   function (callback)
   {
     //create server
-    var app = express();
+    var app = express.createServer();
 
     app.use(function (req, res, next) {
       res.header("Server", serverName);
@@ -135,7 +135,7 @@ async.waterfall([
       app.use(express.cookieParser());
     });
     
-    app.use(function(err, req, res, next) {
+    app.error(function(err, req, res, next){
       res.send(500);
       console.error(err.stack ? err.stack : err.toString());
       gracefulShutdown();
